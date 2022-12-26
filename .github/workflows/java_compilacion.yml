@@ -34,7 +34,10 @@ jobs:
       run: mvn package
     
     - name: ruta
-      run: pwd    
+      run: pwd 
+
+    - name: directorios
+      run: ll
     
     - name: mover
       run: mv MavenArtefacto_mex_4/target/MavenArtefacto-0.0.1-SNAPSHOT.jar /target
