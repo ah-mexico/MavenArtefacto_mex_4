@@ -32,6 +32,12 @@ jobs:
      
     - name: mvn package
       run: mvn package
+    
+    - name: ruta
+      run: pwd    
+    
+    - name: mover
+      run: mv /home/runner/work/MavenArtefacto_mex_4/MavenArtefacto_mex_4/src/main/resources/maven-surefire-plugin-2.22.1.jar /target
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
