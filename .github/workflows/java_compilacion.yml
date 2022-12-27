@@ -32,6 +32,10 @@ jobs:
      
     - name: mvn package
       run: mvn package
+      
+    - name: Listar archivos en el repositorio
+      run: |
+          ls ${{ github.workspace }}      
     
     - name: ruta 1
       run: pwd 
