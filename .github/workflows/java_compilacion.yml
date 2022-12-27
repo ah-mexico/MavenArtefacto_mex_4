@@ -42,14 +42,13 @@ jobs:
     - name: subir 1 
       run: cd src
       
-    - name: subir directorio 1 
-      run: cd target
+    - name: directorios 2
+      run: ls   
       
     - name: ruta2
       run: pwd
     
-    - name: directorios
-      run: ls   
+
       
       
       
