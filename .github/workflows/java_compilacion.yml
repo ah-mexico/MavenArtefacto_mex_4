@@ -40,7 +40,7 @@ jobs:
       run: ls   
       
     - name: subir 1 
-      run: cd MavenArtefacto_mex_4
+      run: cd src
       
     - name: subir directorio 1 
       run: cd target
