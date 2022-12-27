@@ -36,7 +36,8 @@ jobs:
     - name: Listar archivos en el repositorio
       run: |
           ls ${{ github.workspace }}      
-    
+    - run: echo "🍏 This job's status is ${{ job.status }}."
+      
     - name: ruta 1
       run: pwd 
 
