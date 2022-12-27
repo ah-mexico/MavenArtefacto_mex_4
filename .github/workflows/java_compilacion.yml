@@ -36,7 +36,10 @@ jobs:
     - name: ruta
       run: pwd 
 
-    - name: subir directorio
+    - name: subir directorio 1 
+      run: cd MavenArtefacto_mex_4
+      
+    - name: subir directorio 1 
       run: cd target
       
     - name: ruta2
