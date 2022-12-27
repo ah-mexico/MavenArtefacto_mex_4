@@ -33,10 +33,13 @@ jobs:
     - name: mvn package
       run: mvn package
     
-    - name: ruta
+    - name: ruta 1
       run: pwd 
 
-    - name: subir directorio 1 
+    - name: directorios 1
+      run: ls   
+      
+    - name: subir 1 
       run: cd MavenArtefacto_mex_4
       
     - name: subir directorio 1 
