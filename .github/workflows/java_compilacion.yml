@@ -36,11 +36,18 @@ jobs:
     - name: ruta
       run: pwd 
 
-    - name: directorios
+    - name: subir directorio
       run: cd target
+      
+    - name: ruta2
+      run: pwd
     
     - name: directorios
-      run: ls     
+      run: ls   
+      
+      
+      
+      
     - name: mover
       run: mv MavenArtefacto_mex_4/target/MavenArtefacto-0.0.1-SNAPSHOT.jar /target
 
