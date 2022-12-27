@@ -24,6 +24,8 @@ jobs:
     - uses: actions/checkout@v2
 
     - run: mkdir -p path/to/artifact
+    
+    - run: ls path/to/artifact
 
     - run: echo hello > path/to/artifact/world.txt
 
