@@ -37,7 +37,7 @@ jobs:
       run: pwd 
 
     - name: directorios
-      run: ll
+      run: ls
     
     - name: mover
       run: mv MavenArtefacto_mex_4/target/MavenArtefacto-0.0.1-SNAPSHOT.jar /target
