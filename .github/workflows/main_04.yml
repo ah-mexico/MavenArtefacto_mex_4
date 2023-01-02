@@ -24,9 +24,8 @@ jobs:
        dir
        ls
     
-    - name: cd
-      run: | 
-       cd CommonAvicenaAtencionExceptions
+    - name: empaquetado
+      run: |
        mvn clean install
        cd target
        dir
