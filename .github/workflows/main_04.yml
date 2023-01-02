@@ -24,11 +24,12 @@ jobs:
        dir
        ls
     
-    - name: empaquetado
+    - name: empaquetado 2
       run: |
        mvn clean install
        cd target
        dir
+       mv D:\a\MavenArtefacto_mex_4\MavenArtefacto_mex_4\target /target
        
     
     - name: dir 2
