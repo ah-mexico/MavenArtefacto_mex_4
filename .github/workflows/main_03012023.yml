@@ -29,7 +29,8 @@ jobs:
        ls -l
     
     - name: Archivar artefacto
+      uses: actions/upload-artifact@v3  
        pwd
        ls -l
-      uses: actions/upload-artifact@v3  
+     
  
