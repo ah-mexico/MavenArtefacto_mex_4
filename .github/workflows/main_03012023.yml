@@ -27,10 +27,13 @@ jobs:
        pwd
        cd target
        ls -l
-    
-    - name: Archivar artefacto
-      uses: actions/upload-artifact@v3  
+       - name:resultado archivo 
        pwd
-       ls -l
+      # uses: actions/upload-artifact@v3
+      #  with:
+      #    name: code-coverage-report
+      #    path: output/test/code-coverage.html
+       
+
      
  
