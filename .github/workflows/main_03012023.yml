@@ -22,8 +22,9 @@ jobs:
     - name: dir 1
       run: | 
        pwd
-       ls
+       ls -l
        mvn clean install
+       pwd
        cd target
-       ls
+       ls -l
  
