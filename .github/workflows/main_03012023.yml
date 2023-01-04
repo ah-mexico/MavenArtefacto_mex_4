@@ -23,5 +23,7 @@ jobs:
       run: | 
        pwd
        ls
-    
+       mvn clean install
+       cd target
+       ls
  
