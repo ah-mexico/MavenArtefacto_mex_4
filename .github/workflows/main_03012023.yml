@@ -27,4 +27,9 @@ jobs:
        pwd
        cd target
        ls -l
+    
+    - name: Archivar artefacto
+       pwd
+       ls -l
+      uses: actions/upload-artifact@v3  
  
