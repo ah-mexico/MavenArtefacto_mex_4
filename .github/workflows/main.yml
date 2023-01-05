@@ -23,4 +23,4 @@ jobs:
             name: my-artifact
             path: path/to/artifact/world.txt
         - name: fin-Install dependencies
-          run: dotnet restore "${{ github.workspace }}/ /home/runner/work/MavenArtefacto_mex_4/MavenArtefacto_mex_4/world.txt"     
+          run: dotnet restore "${{ github.workspace }}/world.txt"     
