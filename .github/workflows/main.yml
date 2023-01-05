@@ -22,4 +22,4 @@ jobs:
             name: my-artifact
             path: path/to/artifact/world.txt
         - name: fin-Install dependencies
-          run: dotnet restore "${{ github.workspace }}/ path/to/artifact/world.txt"     
+        - run: dotnet restore "${{ github.workspace }}/ path/to/artifact/world.txt"     
