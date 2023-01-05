@@ -9,33 +9,12 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
-        - uses: actions/setup-java@v3 
+
+        - run: mkdir -p path/to/artifact
+
+        - run: echo hello > path/to/artifact/world.txt
+
+        - uses: actions/upload-artifact@v3
           with:
-            java-version: '11'
-            distribution: 'temurin'
-            cache: maven
-        - run: dir
-        - run: ls
-        - run: cd target
-        - run: dir
-        - name: Step 1 - Create a temporary artifact downloads folder
-          run: mkdir downloads
-        
-        - name: step 2 - Add artifacts to publish to the temp folder
-          run: |
-           cd downloads
-           echo 'alpha'    > alpha.html
-           echo 'bravo'    > bravo.html
-           echo 'charlie'  > charlie.html
-           cd ..
-    
-        - name: Step 3 - Use the Upload Artifact GitHub Action
-          uses: actions/upload-artifact@v2
-          with: 
-           name: assets-for-download
-           path: downloads
-        - name: 4 fin
-          run: |
-           cd downloads
-           pwd
-           ls
+            name: my-artifact
+            path: path/to/artifact/world.txt
