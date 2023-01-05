@@ -1,9 +1,8 @@
-  name: ic_java_05012023
-
-  on: 
-    pull_request:  
-      branches: [ master]
-  jobs:
+name: ic_java_05012023
+on: 
+  pull_request:  
+   branches: [ master]
+jobs:
     master_java:
       runs-on: windows-latest
       steps:
