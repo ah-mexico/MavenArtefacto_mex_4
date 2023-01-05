@@ -15,4 +15,6 @@ jobs:
             distribution: 'temurin'
             cache: maven
         - run: dir
-        - run: ls 
+        - run: ls
+        - run: cd target
+        - run: dir 
