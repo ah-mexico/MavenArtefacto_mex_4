@@ -9,8 +9,9 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
-        - name: paso 1
+        
         - run: |
+           echo "Paso1__________________________"
            mkdir -p path/to/artifact
            pwd
            ls
