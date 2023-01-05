@@ -9,8 +9,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
-
+        
+        - name: 1-paso
         - run: mkdir -p path/to/artifact
+           pwd
+           ls
 
         - run: echo hello > path/to/artifact/world.txt
 
