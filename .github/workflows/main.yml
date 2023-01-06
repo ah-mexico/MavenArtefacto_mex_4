@@ -1,39 +1,21 @@
-name: ic_java_05012023
-on: 
- push:
-    branches: [ "master" ]
-    tags:
-    - '*/'
- pull_request:  
-   branches: [ master]
-   tags:
-    - '*'
-jobs:
-    master_java:
-      runs-on: ubuntu-latest
-      permissions:
-         contents: write
-      steps:
-        - uses: actions/checkout@v3
-        
-        - run: |
-           echo "Paso1__________________________"
-           mkdir -p path/to/artifact
-           pwd
-           ls
-          
-        - run: echo hello > path/to/artifact/world.txt
+name: Releases
 
-        - uses: actions/upload-artifact@v3
-          with:
-            name: my-artifact
-            path: path/to/artifact/world.txt
-            retention-days: 5
-          
-        
-        - uses: ah-mexico/MavenArtefacto_mex_4@v1
-          with:
-             artifacts: "release.tar.gz,foo/*.txt"
-             bodyFile: "body.md"
+on: 
+  push:
+    tags:
+    - '*'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "release.tar.gz,foo/*.txt"
+        bodyFile: "body.md
             
             
