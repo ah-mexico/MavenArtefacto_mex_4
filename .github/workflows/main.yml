@@ -25,7 +25,7 @@ jobs:
             retention-days: 5
           
         
-        - uses: ah-mexico/MavenArtefacto_mex_4@v1
+        - uses: ah-mexico/MavenArtefacto_mex_4@v2.299.1
           with:
              artifacts: "release.tar.gz,foo/*.txt"
              bodyFile: "body.md"
