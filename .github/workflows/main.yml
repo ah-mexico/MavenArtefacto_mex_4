@@ -23,7 +23,7 @@ jobs:
             name: my-artifact
             path: path/to/artifact/world.txt
         
-        - name: Create git hub relesse   
+       
         - uses: actions/create-release@v1
           env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
