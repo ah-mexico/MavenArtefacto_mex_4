@@ -24,7 +24,7 @@ jobs:
             path: path/to/artifact/world.txt
             retention-days: 5
           
-        - name: Create a Release
+        
         - uses: MavenArtefacto_mex_4/Github-Release-Action@v4
           env:
              GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
