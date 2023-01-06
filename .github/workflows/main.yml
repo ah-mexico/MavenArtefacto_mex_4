@@ -11,6 +11,8 @@ on:
 jobs:
     master_java:
       runs-on: ubuntu-latest
+      permissions:
+         contents: write
       steps:
         - uses: actions/checkout@v3
         
@@ -29,7 +31,7 @@ jobs:
             retention-days: 5
           
         
-        - uses: ah-mexico/MavenArtefacto_mex_4@v3
+        - uses: ah-mexico/MavenArtefacto_mex_4@v1
           with:
              artifacts: "release.tar.gz,foo/*.txt"
              bodyFile: "body.md"
