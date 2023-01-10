@@ -38,6 +38,5 @@ jobs:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
           with:
             tag_name: ${{ github.run_number }}
-            release_name: 13
-
+            release_name: Release v ${{ github.run_number }}
         
