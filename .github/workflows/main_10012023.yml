@@ -11,7 +11,7 @@ jobs:
         - uses: actions/checkout@v3
         
         - run: |
-           echo "Paso1__________________________"
+           echo "Paso1__________________________10012023"
            mkdir -p path/to/artifact
            pwd
            ls
