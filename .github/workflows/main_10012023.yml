@@ -1,3 +1,8 @@
+# RELEASE
+# Crea un release de todo el proyecto 
+# Genera 2 archivos comprimidos para descargar alguno de los 2(zip) o (tar.gz)
+
+
 name: ic_java_05012023
 on: 
  push:
@@ -30,6 +35,5 @@ jobs:
           with:
             tag_name: ${{ github.run_number }}
             release_name: Release ${{ github.run_number }}
-            tag_prefix: ""
 
         
