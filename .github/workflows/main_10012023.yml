@@ -33,13 +33,13 @@ jobs:
             path: path/to/artifact/world.txt
         
        
-        - uses: actions/create-release@v1
-          env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+        - uses: "./packages/automatic-releases/"
           with:
-            tag_name: v.0.0.${{ github.run_number }}
-            release_name: v.0.0.${{ github.run_number }}
-            files: |
-             path/to/artifact/world.txt
+           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+           automatic_release_tag: "latest"
+           prerelease: true
+           title: "Development Build"
+           files: |
+            path/to/artifact/world.txt
   
 
