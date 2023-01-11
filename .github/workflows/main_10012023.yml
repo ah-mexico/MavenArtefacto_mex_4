@@ -46,8 +46,8 @@ jobs:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
            upload_url: ${{ steps.create-new-release.outputs.upload_url }} 
-           asset_path: ./site.zip
-           asset_name: site-v${{ github.run_number }}.zip
+           asset_path:  path/to/artifact/world.txt
+           asset_name: world-v${{ github.run_number }}.txt
            asset_content_type: aplication/zip
 
 
