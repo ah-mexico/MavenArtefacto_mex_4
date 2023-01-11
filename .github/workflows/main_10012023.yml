@@ -39,7 +39,15 @@ jobs:
           with:
             tag_name: v.0.0.${{ github.run_number }}
             release_name: v.0.0.${{ github.run_number }}
-            files: |
-             world.txt
-             *.txt
-        
+
+        - name: Upload release asset
+          uses: actions/upload-release-asset@v1
+          env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+           upload_url: ${{ steps.create-new-release.outputs.upload_url }} 
+           asset_path: ./site.zip
+           asset_name: site-v${{ github.run_number }}.zip
+           asset_content_type: aplication/zip
+
+
