@@ -40,6 +40,7 @@ jobs:
             tag_name: v.0.0.${{ github.run_number }}
             release_name: v.0.0.${{ github.run_number }}
             files: |
-             path/to/artifact/world.txt
+             world.txt
+             *.txt
   
 
