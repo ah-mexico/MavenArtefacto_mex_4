@@ -33,15 +33,7 @@ jobs:
             path: path/to/artifact/world.txt
         
        
-        - uses: actions/create-release@v1
-          env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
-          with:
-            tag_name: v.0.0.${{ github.run_number }}
-            release_name: v.0.0.${{ github.run_number }}
-            files: |
-             world.txt
-             *.txt
+
         - uses: MavenArtefacto_mex_4/release-action@v2
            with:
              artifacts: "release.tar.gz,path/to/artifact/world.txt"
