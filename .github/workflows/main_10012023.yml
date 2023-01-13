@@ -42,5 +42,9 @@ jobs:
             files: |
              world.txt
              *.txt
+        - uses: MavenArtefacto_mex_4/release-action@v2
+           with:
+             artifacts: "release.tar.gz,path/to/artifact/world.txt"
+             bodyFile: "body.md"
   
 
